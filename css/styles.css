@@ -1,11 +1,19 @@
-/* General Customizations */
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-style: normal;
     direction: rtl;
     text-align: right;
 }
 
-/* Navbar Customization */
+h1 {
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .navbar {
     background-color: #fff;
     padding: 15px 30px;
@@ -23,16 +31,15 @@ body {
     font-size: 1.2rem;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #E03A24;
-}
+    .navbar-nav .nav-link:hover {
+        color: #E03A24;
+    }
 
-.navbar-nav .nav-link img {
-    width: 24px;
-    height: 24px;
-}
+    .navbar-nav .nav-link img {
+        width: 24px;
+        height: 24px;
+    }
 
-/* Hero Section Customization */
 .hero-section {
     position: relative;
     height: 600px;
@@ -43,28 +50,27 @@ body {
     align-items: center;
 }
 
-.hero-section img {
-    max-width: 300px;
-}
+    .hero-section img {
+        max-width: 300px;
+    }
 
 .hero-text {
     max-width: 600px;
     padding: 20px;
 }
 
-.hero-text h1 {
-    font-size: 2.5rem;
-    color: #E03A24;
-    margin-bottom: 20px;
-}
+    .hero-text h1 {
+        font-size: 2.5rem;
+        color: #E03A24;
+        margin-bottom: 20px;
+    }
 
-.hero-text h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 20px;
-}
+    .hero-text h2 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
 
-/* Contact Form Customization */
 .contact-form h1 {
     font-size: 1.75rem;
     color: #333;
@@ -91,12 +97,11 @@ body {
     padding: 10px 20px;
 }
 
-.contact-form .btn-danger:hover {
-    background-color: #c32c1c;
-    border-color: #c32c1c;
-}
+    .contact-form .btn-danger:hover {
+        background-color: #c32c1c;
+        border-color: #c32c1c;
+    }
 
-/* Menu Section Customization */
 .menu-section h3 {
     font-size: 1.5rem;
     color: #333;
@@ -108,30 +113,27 @@ body {
 .menu-section ul {
     list-style-type: none;
     padding: 0;
-    text-align: right; /* Ensure right alignment for Hebrew text */
+    text-align: right;
 }
 
-.menu-section ul li {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-    color: #555;
-}
+    .menu-section ul li {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        color: #555;
+    }
 
 .menu-section .row {
     margin-bottom: 20px;
 }
 
-/* Specials Section Customization */
 .menu-section .col-12 ul li {
-    font-weight: bold;
     color: #333;
 }
 
-.menu-section .col-12 ul li strong {
-    color: #E03A24;
-}
+    .menu-section .col-12 ul li strong {
+        color: #E03A24;
+    }
 
-/* Footer */
 footer {
     background-color: #f8f9fa;
     margin-top: 20px;
@@ -140,7 +142,6 @@ footer {
     color: #777;
 }
 
-/* Specific to Dropdown */
 #restaurant-selection {
     margin-top: 20px;
     max-width: 500px;
@@ -155,3 +156,123 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
+
+#pickup-btn {
+    padding: 10px;
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#delivery-btn {
+    padding: 10px;
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.gallery-item {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-danger,
+.btn-outline-danger {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+    .btn-danger:last-child,
+    .btn-outline-danger:last-child {
+        margin-right: 0;
+    }
+
+
+#paymentOptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#address-section .input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#address-input {
+    width: 80%;
+    max-width: 400px;
+    min-width: 250px; 
+   
+}
+#confirm-address-btn {
+    padding: 10px 15px; 
+    border-radius: 8px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+}
+
+    #confirm-address-btn:hover {
+        background-color: #0056b3;
+    }
+
+
+.footer-custom {
+    background-color: #f8f9fa;
+}
+
+
+.footer-custom {
+    text-align: center; 
+}
+
+
+.footer-custom {
+    padding-top: 1.5rem; 
+    padding-bottom: 1.5rem; 
+}
+
+
+#reservation-card {
+    width: 300px; 
+    height: 450px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    #reservation-card .card-body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ 
